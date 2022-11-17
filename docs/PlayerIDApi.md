@@ -4,96 +4,17 @@ All URIs are relative to *https://app.economykit.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreatePlayer**](PlayerIDApi.md#createplayer) | **POST** /inventories/api/v1/player-id/ | 
-[**FetchPlayer**](PlayerIDApi.md#fetchplayer) | **GET** /inventories/api/v1/player-id/ | 
+[**CreateOrFetchPlayer**](PlayerIDApi.md#createorfetchplayer) | **POST** /inventories/api/v1/player-id/ | 
 
 
 
-## CreatePlayer
+## CreateOrFetchPlayer
 
-> FetchPlayerResponse CreatePlayer (FetchPlayerRequest fetchPlayerRequest = null)
-
-
-
-Create a player by an external ID.
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using EconomyKit.UnityClient.Api;
-using EconomyKit.UnityClient.Client;
-using EconomyKit.UnityClient.Model;
-
-namespace Example
-{
-    public class CreatePlayerExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://app.economykit.com";
-            // Configure HTTP bearer authorization: bearerAuth
-            Configuration.Default.AccessToken = "YOUR_ACCESS_TOKEN";
-
-            var apiInstance = new PlayerIDApi(Configuration.Default);
-            var fetchPlayerRequest = new FetchPlayerRequest(); // FetchPlayerRequest |  (optional) 
-
-            try
-            {
-                FetchPlayerResponse result = apiInstance.CreatePlayer(fetchPlayerRequest);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling PlayerIDApi.CreatePlayer: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fetchPlayerRequest** | [**FetchPlayerRequest**](FetchPlayerRequest.md)|  | [optional] 
-
-### Return type
-
-[**FetchPlayerResponse**](FetchPlayerResponse.md)
-
-### Authorization
-
-[bearerAuth](../README.md#bearerAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | OK |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## FetchPlayer
-
-> FetchPlayerResponse FetchPlayer (FetchPlayerRequest fetchPlayerRequest = null)
+> FetchPlayerResponse CreateOrFetchPlayer (FetchPlayerRequest fetchPlayerRequest = null)
 
 
 
-Fetch a player by an external ID.
+Create or fetch a player by an external ID.
 
 ### Example
 
@@ -106,7 +27,7 @@ using EconomyKit.UnityClient.Model;
 
 namespace Example
 {
-    public class FetchPlayerExample
+    public class CreateOrFetchPlayerExample
     {
         public static void Main()
         {
@@ -119,12 +40,12 @@ namespace Example
 
             try
             {
-                FetchPlayerResponse result = apiInstance.FetchPlayer(fetchPlayerRequest);
+                FetchPlayerResponse result = apiInstance.CreateOrFetchPlayer(fetchPlayerRequest);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling PlayerIDApi.FetchPlayer: " + e.Message );
+                Debug.Print("Exception when calling PlayerIDApi.CreateOrFetchPlayer: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

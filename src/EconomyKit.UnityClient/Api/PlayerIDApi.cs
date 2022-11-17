@@ -29,92 +29,48 @@ namespace EconomyKit.UnityClient.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a player by an external ID.
+        /// Create or fetch a player by an external ID.
         /// </remarks>
         /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fetchPlayerRequest"> (optional)</param>
         /// <returns>FetchPlayerResponse</returns>
-        FetchPlayerResponse CreatePlayer (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest));
+        FetchPlayerResponse CreateOrFetchPlayer (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a player by an external ID.
+        /// Create or fetch a player by an external ID.
         /// </remarks>
         /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fetchPlayerRequest"> (optional)</param>
         /// <returns>ApiResponse of FetchPlayerResponse</returns>
-        ApiResponse<FetchPlayerResponse> CreatePlayerWithHttpInfo (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest));
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Fetch a player by an external ID.
-        /// </remarks>
-        /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fetchPlayerRequest"> (optional)</param>
-        /// <returns>FetchPlayerResponse</returns>
-        FetchPlayerResponse FetchPlayer (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest));
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Fetch a player by an external ID.
-        /// </remarks>
-        /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fetchPlayerRequest"> (optional)</param>
-        /// <returns>ApiResponse of FetchPlayerResponse</returns>
-        ApiResponse<FetchPlayerResponse> FetchPlayerWithHttpInfo (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest));
+        ApiResponse<FetchPlayerResponse> CreateOrFetchPlayerWithHttpInfo (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a player by an external ID.
+        /// Create or fetch a player by an external ID.
         /// </remarks>
         /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fetchPlayerRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of FetchPlayerResponse</returns>
-        System.Threading.Tasks.Task<FetchPlayerResponse> CreatePlayerAsync (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<FetchPlayerResponse> CreateOrFetchPlayerAsync (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Create a player by an external ID.
+        /// Create or fetch a player by an external ID.
         /// </remarks>
         /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fetchPlayerRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (FetchPlayerResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<FetchPlayerResponse>> CreatePlayerWithHttpInfoAsync (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Fetch a player by an external ID.
-        /// </remarks>
-        /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fetchPlayerRequest"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of FetchPlayerResponse</returns>
-        System.Threading.Tasks.Task<FetchPlayerResponse> FetchPlayerAsync (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// Fetch a player by an external ID.
-        /// </remarks>
-        /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fetchPlayerRequest"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (FetchPlayerResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<FetchPlayerResponse>> FetchPlayerWithHttpInfoAsync (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<FetchPlayerResponse>> CreateOrFetchPlayerWithHttpInfoAsync (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -227,24 +183,24 @@ namespace EconomyKit.UnityClient.Api
         }
 
         /// <summary>
-        ///  Create a player by an external ID.
+        ///  Create or fetch a player by an external ID.
         /// </summary>
         /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fetchPlayerRequest"> (optional)</param>
         /// <returns>FetchPlayerResponse</returns>
-        public FetchPlayerResponse CreatePlayer (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest))
+        public FetchPlayerResponse CreateOrFetchPlayer (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest))
         {
-             ApiResponse<FetchPlayerResponse> localVarResponse = CreatePlayerWithHttpInfo(fetchPlayerRequest);
+             ApiResponse<FetchPlayerResponse> localVarResponse = CreateOrFetchPlayerWithHttpInfo(fetchPlayerRequest);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Create a player by an external ID.
+        ///  Create or fetch a player by an external ID.
         /// </summary>
         /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fetchPlayerRequest"> (optional)</param>
         /// <returns>ApiResponse of FetchPlayerResponse</returns>
-        public ApiResponse<FetchPlayerResponse> CreatePlayerWithHttpInfo (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest))
+        public ApiResponse<FetchPlayerResponse> CreateOrFetchPlayerWithHttpInfo (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest))
         {
 
             var localVarPath = "/inventories/api/v1/player-id/";
@@ -294,7 +250,7 @@ namespace EconomyKit.UnityClient.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("CreatePlayer", localVarResponse);
+                Exception exception = ExceptionFactory("CreateOrFetchPlayer", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -304,27 +260,27 @@ namespace EconomyKit.UnityClient.Api
         }
 
         /// <summary>
-        ///  Create a player by an external ID.
+        ///  Create or fetch a player by an external ID.
         /// </summary>
         /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fetchPlayerRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of FetchPlayerResponse</returns>
-        public async System.Threading.Tasks.Task<FetchPlayerResponse> CreatePlayerAsync (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<FetchPlayerResponse> CreateOrFetchPlayerAsync (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<FetchPlayerResponse> localVarResponse = await CreatePlayerWithHttpInfoAsync(fetchPlayerRequest, cancellationToken);
+             ApiResponse<FetchPlayerResponse> localVarResponse = await CreateOrFetchPlayerWithHttpInfoAsync(fetchPlayerRequest, cancellationToken);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        ///  Create a player by an external ID.
+        ///  Create or fetch a player by an external ID.
         /// </summary>
         /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="fetchPlayerRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (FetchPlayerResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<FetchPlayerResponse>> CreatePlayerWithHttpInfoAsync (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<FetchPlayerResponse>> CreateOrFetchPlayerWithHttpInfoAsync (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest), CancellationToken cancellationToken = default(CancellationToken))
         {
 
             var localVarPath = "/inventories/api/v1/player-id/";
@@ -374,164 +330,7 @@ namespace EconomyKit.UnityClient.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("CreatePlayer", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<FetchPlayerResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (FetchPlayerResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FetchPlayerResponse)));
-        }
-
-        /// <summary>
-        ///  Fetch a player by an external ID.
-        /// </summary>
-        /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fetchPlayerRequest"> (optional)</param>
-        /// <returns>FetchPlayerResponse</returns>
-        public FetchPlayerResponse FetchPlayer (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest))
-        {
-             ApiResponse<FetchPlayerResponse> localVarResponse = FetchPlayerWithHttpInfo(fetchPlayerRequest);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  Fetch a player by an external ID.
-        /// </summary>
-        /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fetchPlayerRequest"> (optional)</param>
-        /// <returns>ApiResponse of FetchPlayerResponse</returns>
-        public ApiResponse<FetchPlayerResponse> FetchPlayerWithHttpInfo (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest))
-        {
-
-            var localVarPath = "/inventories/api/v1/player-id/";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (fetchPlayerRequest != null && fetchPlayerRequest.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(fetchPlayerRequest); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = fetchPlayerRequest; // byte array
-            }
-
-            // authentication (bearerAuth) required
-            // http bearer authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
-            {
-                localVarHeaderParams["Authorization"] = "Bearer " + this.Configuration.AccessToken;
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("FetchPlayer", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<FetchPlayerResponse>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (FetchPlayerResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(FetchPlayerResponse)));
-        }
-
-        /// <summary>
-        ///  Fetch a player by an external ID.
-        /// </summary>
-        /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fetchPlayerRequest"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of FetchPlayerResponse</returns>
-        public async System.Threading.Tasks.Task<FetchPlayerResponse> FetchPlayerAsync (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<FetchPlayerResponse> localVarResponse = await FetchPlayerWithHttpInfoAsync(fetchPlayerRequest, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  Fetch a player by an external ID.
-        /// </summary>
-        /// <exception cref="EconomyKit.UnityClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fetchPlayerRequest"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (FetchPlayerResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<FetchPlayerResponse>> FetchPlayerWithHttpInfoAsync (FetchPlayerRequest fetchPlayerRequest = default(FetchPlayerRequest), CancellationToken cancellationToken = default(CancellationToken))
-        {
-
-            var localVarPath = "/inventories/api/v1/player-id/";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (fetchPlayerRequest != null && fetchPlayerRequest.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(fetchPlayerRequest); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = fetchPlayerRequest; // byte array
-            }
-
-            // authentication (bearerAuth) required
-            // http bearer authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.AccessToken))
-            {
-                localVarHeaderParams["Authorization"] = "Bearer " + this.Configuration.AccessToken;
-            }
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("FetchPlayer", localVarResponse);
+                Exception exception = ExceptionFactory("CreateOrFetchPlayer", localVarResponse);
                 if (exception != null) throw exception;
             }
 

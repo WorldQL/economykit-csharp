@@ -113,8 +113,7 @@ Class | Method | HTTP request | Description
 *CommodityApi* | [**ListCommodities**](docs/CommodityApi.md#listcommodities) | **GET** /inventories/api/v1/commodity/ | 
 *InventoryApi* | [**ListInventory**](docs/InventoryApi.md#listinventory) | **GET** /inventories/api/v1/player-inventory/ | 
 *PlayerApi* | [**ListPlayers**](docs/PlayerApi.md#listplayers) | **GET** /inventories/api/v1/player/ | 
-*PlayerIDApi* | [**CreatePlayer**](docs/PlayerIDApi.md#createplayer) | **POST** /inventories/api/v1/player-id/ | 
-*PlayerIDApi* | [**FetchPlayer**](docs/PlayerIDApi.md#fetchplayer) | **GET** /inventories/api/v1/player-id/ | 
+*PlayerIDApi* | [**CreateOrFetchPlayer**](docs/PlayerIDApi.md#createorfetchplayer) | **POST** /inventories/api/v1/player-id/ | 
 *StorefrontApi* | [**GetStorefront**](docs/StorefrontApi.md#getstorefront) | **GET** /inventories/api/v1/storefront/ | 
 *StorefrontApi* | [**GetStorefrontitem**](docs/StorefrontApi.md#getstorefrontitem) | **GET** /inventories/api/v1/storefront-item/ | 
 *TradeApi* | [**AcceptTradeRequest**](docs/TradeApi.md#accepttraderequest) | **POST** /inventories/api/v1/trade/accept/ | 
